@@ -1,5 +1,5 @@
 {
-  "name": "beatlink",
+  "name": "fabric-music",
   "version": "1.0.0",
   "description": "Desktop and Mobile Web Site to enable community based building of playlists",
   "main": "Gruntfile.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fabricinc/beatlink.git"
+    "url": "git+https://github.com/fabricinc/fabric-music.git"
   },
   "author": "Fabricinc",
   "license": "ISC"

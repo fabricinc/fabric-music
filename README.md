@@ -1,2 +1,2 @@
-# beatlink
-Beatlink Music Playlist Generator Web App
+# Fabric Music
+Fabric Music Playlist Generator Web App
