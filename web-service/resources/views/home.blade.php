@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<div class="content home">
+	<div id="content" class="content home">
 
 		<h3 class="page-title">Ready to create the <strong>perfect playlist</strong>?</h3>
 

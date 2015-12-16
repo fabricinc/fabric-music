@@ -2,8 +2,8 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/app.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="img/favicon.png">
 		<title>fab.fm</title>
 	</head>
