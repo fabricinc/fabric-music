@@ -9,15 +9,15 @@
 		<section class="interest-discovery">
 
 			<form class="interest-input">
-				<label for="artist-input">Find music similar to an artist you love</label>
-				<input type="text" name="artist-input" id="artist-input" placeholder="Search for an artist">
+				<label class="artist-input-label" for="artist-input">Find music similar to an artist you love</label>
+				<input class="artist-input" type="text" name="artist-input" id="artist-input" placeholder="Search for an artist">
 			</form>
 
 		</section>
 
 		<section class="people">
 
-			<h4 class="section-title">Most popular playlist creators</p>
+			<h4 class="section-title">Most popular playlist creators</h4>
 
 			<ul class="users">
 				<li class="user" id="user-1"><img class="user-avatar" src="img/avatar.png"></li>
@@ -25,7 +25,7 @@
 				<li class="user" id="user-3"><img class="user-avatar" src="img/avatar.png"></li>
 				<li class="user" id="user-4"><img class="user-avatar" src="img/avatar.png"></li>
 				<li class="user" id="user-5"><img class="user-avatar" src="img/avatar.png"></li>
-				<li class="user more">see more</li>
+				<li class="user more">more</li>
 			</ul>
 
 		</section>

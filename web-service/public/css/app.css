@@ -1,0 +1,425 @@
+/*
+==============================================================    
+
+    desktop-manifest.less
+
+    Less Template: Listing of component LESS files to be compiled to desktop.css
+
+	This file should contain only import statements
+	
+============================================================== 
+*/
+/* FOUNDATIONAL RULES AND DEFINITIONS
+===================================================== */
+/*
+==============================================================    
+
+	reset.less
+
+============================================================== 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+}
+html {
+  color: #000;
+  background: #FFF;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+em {
+  font-style: italic;
+  font-weight: normal;
+}
+strong {
+  font-style: normal;
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+section,
+header,
+footer {
+  display: block;
+}
+/*
+==============================================================    
+
+	element-tags.less
+
+	Less Template: HTML Element level rules
+
+============================================================== 
+*/
+html {
+  height: 100%;
+  min-height: 100%;
+  font-family: Lato, Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+}
+body {
+  height: 100%;
+  min-height: 100%;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+  -ms-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+  line-height: 1.3;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #FF3242;
+  text-decoration: none;
+}
+a img {
+  border: 0;
+}
+sup {
+  top: -1em;
+  font-size: 0.45em;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+/*
+==============================================================    
+
+	utilities.less
+
+	Contains useful global definitions and utilities
+
+============================================================== 
+*/
+.hide {
+  display: none;
+}
+/* THEMATIC RULES SHARED BY BLOCKS AND PAGES
+===================================================== */
+/*
+==============================================================    
+
+    colors.less
+	
+============================================================== 
+*/
+/* BACKGROUND COLORS
+===================================================== */
+/* TEXT COLORS
+===================================================== */
+/*
+==============================================================    
+
+    gradients.less
+
+	Definitions for gradient backgrounds
+	
+============================================================== 
+*/
+._gradient-light-olive-vertical {
+  /* Permalink - use to edit this gradient: http://colorzilla.com/gradient-editor/#4b5f68+0,bfced1+65,bfced1+100 */
+  background: #4b5f68;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #4b5f68 0%, #B0BFC1 75%, #B0BFC1 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4b5f68), color-stop(75%, #B0BFC1), color-stop(100%, #bfced1));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #4b5f68 0%, #B0BFC1 75%, #B0BFC1 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #4b5f68 0%, #B0BFC1 75%, #B0BFC1 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #4b5f68 0%, #B0BFC1 75%, #B0BFC1 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #4b5f68 0%, #B0BFC1 75%, #B0BFC1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b5f68', endColorstr='#B0BFC1', GradientType=0);
+  /* IE6-9 */
+}
+/*
+==============================================================    
+
+    sprites.less
+
+	Definitions for images coming from Desktop Sprite image
+	
+============================================================== 
+*/
+/* SOURCE IMAGE PATH
+===================================================== */
+/* MAIN IMAGE FILE
+===================================================== */
+/* DEFINITIONS FOR MAIN DESKTOP IMAGES
+===================================================== */
+/* INDIVIDUAL SPRITES
+===================================================== */
+._hamburger-menu-sprite {
+  background-color: transparent;
+  background-image: url('../img/desktop-sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -10000px;
+}
+._hamburger-menu-sprite a {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+/* UI COMPONENT RULES
+===================================================== */
+/*
+==============================================================    
+
+	buttons.less
+
+============================================================== 
+*/
+/* BLOCK LEVEL RULES
+===================================================== */
+/*
+==============================================================    
+
+	page.less
+
+============================================================== 
+*/
+.page {
+  width: 640px;
+  margin: 0 auto;
+}
+.page .page-title {
+  margin: 1.5em auto;
+  font-size: 1.75em;
+  text-align: center;
+}
+.page .section-title {
+  padding: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  color: #676767;
+}
+/*
+==============================================================    
+
+    header.less
+	
+============================================================== 
+*/
+.header {
+  height: 6em;
+  background-color: #A21600;
+  color: #FFFFFF;
+  overflow: auto;
+}
+.header .left-header {
+  float: left;
+}
+.header .right-header {
+  float: right;
+  margin: 1em;
+}
+.header .right-header .login {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+}
+.header .right-header .login:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.header .right-header .avatar {
+  display: none;
+}
+.header .right-header .avatar .avatar-image {
+  width: 2em;
+  height: 2em;
+}
+.header .center-header {
+  width: 153px;
+  height: 6em;
+  margin: -0.25em auto 0;
+  background-image: url("../img/fab-fm-wordmark.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -10000px;
+}
+/* PAGE LEVEL RULES
+===================================================== */
+/*
+==============================================================    
+
+	home.less
+
+============================================================== 
+*/
+.content.home .interest-input {
+  width: 80%;
+  margin: 0 auto;
+}
+.content.home .interest-input .artist-input-label {
+  display: block;
+  width: 100%;
+  margin: 0.25em 0.5em;
+  color: #555;
+  font-size: 1.1em;
+}
+.content.home .interest-input .artist-input {
+  width: 96%;
+  padding: 2%;
+  font-size: 1.4em;
+}
+.content.home .people {
+  margin: 3em 0.5em 1.2em;
+}
+.content.home .people .users {
+  width: 37.4em;
+  margin: 0 auto;
+}
+.content.home .people .user {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  margin: 1em 0.5em;
+}
+.content.home .people .user.more {
+  float: right;
+  border-radius: 50%;
+  background-color: #BBBBBB;
+  line-height: 5em;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.content.home .people .user-avatar {
+  width: 5em;
+  border-radius: 50%;
+}
+.content.home .packlist .pack {
+  height: 130px;
+  margin-bottom: 14px;
+  padding-top: 1px;
+  border-bottom: 2px solid #dfdfdf;
+  background-color: #f0f0f0;
+}
+.content.home .packlist .pack .artwork {
+  float: left;
+  margin: 15px;
+}
+.content.home .packlist .pack .pack-title {
+  margin-top: 1.9em;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.content.home .packlist .pack .pack-info {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+/* RULES SPECIFIC TO INDIVIDUAL PAGES
+===================================================== */

@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 		less: {
 			files: {
 				src: 'client-src/less/desktop-manifest.less',
-				dest: 'assets/css/desktop.css'
+				dest: 'web-service/public/css/app.css'
 			}
 		},
 		concat: {
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 				files: [
 					'<%= jshint.files %>',
 					'client-src/js-app/**/*.js',
-					'client-src/less/**/*.less',
+					'client-src/less/*/*.less',
 					'client-src/less/pages/*.less'
 				],
 				//tasks: ['jshint', 'less', 'concat:desktop', 'uglify:desktop']

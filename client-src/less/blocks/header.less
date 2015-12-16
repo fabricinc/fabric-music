@@ -1,0 +1,57 @@
+/*
+==============================================================    
+
+    header.less
+	
+============================================================== 
+*/
+
+
+.header {
+	height: 6em;
+	background-color: #A21600;
+	color: @white;
+	overflow: auto;
+
+
+	.left-header {
+		float: left;
+	}
+
+	.right-header {
+		float: right;
+		margin: 1em;
+
+		.login {
+			background: none;
+			border: none;
+			color: @white;
+
+			&:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+
+		.avatar {
+			display: none;
+
+			.avatar-image {
+				width: 2em;
+				height: 2em;
+			}
+		}
+	}
+
+	.center-header {
+		width: 153px;
+		height: 6em;
+		margin: -0.25em auto 0;
+		background-image: url("../img/fab-fm-wordmark.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		text-indent: -10000px;
+	}
+}
+
+
