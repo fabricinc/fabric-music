@@ -1,0 +1,23 @@
+/*
+==============================================================    
+
+	buttons.less
+
+============================================================== 
+*/
+
+._button-pill (@height: 14px, @padding-y: 5px, @padding-x: 10px, @background-color: transparent, @border-width: 0px, @border-color: transparent) {
+	padding: @padding-y @padding-x;
+	border-radius: @height + @padding-y;
+	border: @border-width solid @border-color;
+	background-color: @background-color;
+	cursor: pointer;
+	font-family: Muli;
+
+	&:hover {
+		background-color: saturate(lighten(@background-color, 5%), 5%);
+		color: @lightOrange;
+	}
+}
+
+
