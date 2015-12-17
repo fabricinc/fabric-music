@@ -37,9 +37,31 @@ Apache:
 
 
 Composer
+	Step 1: Install
+		curl -sS https://getcomposer.org/installer | php
+
+	Step 2: Make Global
+		mv composer.phar /usr/local/bin/composer (may need sudo)
 
 
 Laravel
+	Step 1: Install
+		Run: composer global require "laravel/installer"
+
+	Step 2: Laravel to $PATH
+		In .bash-profile add "export PATH="~/.composer/vendor/bin:$PATH"
+
+	Step 3: Install dependancies 
+		In /web-service/ run 'composer install'
+
+	Step 4: Show Errors for Laravel
+		In '/web-service/config' open app.php
+		Change 'debug' to true
+
+	Step 4: Add Key for Laravel
+		In the terminal run 'php artisan key:generate'
+		Replace 'SomeRandomString' with the key you just generated
+
 
 	Comment out the following lines from public/.htaccess:
 
