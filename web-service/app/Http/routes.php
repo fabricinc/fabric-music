@@ -13,3 +13,4 @@
 
 get('/', 'HomeController@index');
 
+// get('/swipe', 'HomeController@index');

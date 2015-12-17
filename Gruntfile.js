@@ -29,6 +29,7 @@ module.exports = function(grunt) {
 			// 			'client-src/js-app/views/components/*.js',
 			// 			'client-src/js-app/views/blocks/*.js',
 			// 			'client-src/js-app/views/pages/*.js',
+						'client-src/js-app/base/router.js',
 						'client-src/js-app/base/app.js'
 						],
 					dest: 'web-service/public/js/app.js'}

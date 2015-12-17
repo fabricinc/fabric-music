@@ -36,6 +36,8 @@ FAB.init = function() {
 	/* START ROUTER
 	================================================== */
 	// Initialize Backbone Router
-	// Backbone.history.start();
+	
+	new FAB.Router();
+	Backbone.history.start();
 
 };

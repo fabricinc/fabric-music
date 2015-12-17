@@ -32,7 +32,26 @@ window.FAB = {
 */
 
 FAB.config = {};
-;/*
+;
+FAB.Router = Backbone.Router.extend({
+
+	routes: {
+		'': 'index',
+		'swipe': 'swipe'
+	},
+
+	swipe: function(){
+	
+		console.log( 'swipe' );
+
+	},
+
+	index: function(){
+	
+		console.log( 'index, hello' );
+	
+	},
+});;/*
 ==============================================================    
 
     app.js
@@ -70,6 +89,8 @@ FAB.init = function() {
 	/* START ROUTER
 	================================================== */
 	// Initialize Backbone Router
-	// Backbone.history.start();
+	
+	new FAB.Router();
+	Backbone.history.start();
 
 };
