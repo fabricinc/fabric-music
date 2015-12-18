@@ -24,11 +24,9 @@ module.exports = function(grunt) {
 					{src: [
 						'client-src/js-app/base/namespace.js',
 						'client-src/js-app/base/config.js',
-			// 			'client-src/js-app/utils/*.js',
-			// 			'client-src/js-app/models/*.js',
-			// 			'client-src/js-app/views/components/*.js',
-			// 			'client-src/js-app/views/blocks/*.js',
-			// 			'client-src/js-app/views/pages/*.js',
+						'client-src/js-app/utils/*.js',
+						'client-src/js-app/models/*.js',
+						'client-src/js-app/views/**/*.js',
 						'client-src/js-app/base/app.js'
 						],
 					dest: 'web-service/public/js/app.js'}
