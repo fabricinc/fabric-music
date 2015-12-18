@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 
 function showResult(str) {
-  if (str.length==0) { 
+  if (str.length===0) { 
     document.getElementById("livesearch").innerHTML="";
     document.getElementById("livesearch").style.border="0px";
     return;
@@ -45,7 +45,7 @@ function showResult(str) {
       document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
       document.getElementById("livesearch").style.border="0px";
     }
-  }
+  };
   xmlhttp.open("GET","livesearch.php?q="+str,true);
   xmlhttp.send();
 }
@@ -68,7 +68,7 @@ document.getElementById('gemForm').reset();
       document.getElementById("livesearch2").style.border="0px";
       hide();
     }
-  }
+  };
   xmlhttp.open("GET","getgems.php?q="+publishedid,true);
   xmlhttp.send();
 }

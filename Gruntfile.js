@@ -26,7 +26,9 @@ module.exports = function(grunt) {
 						'client-src/js-app/base/config.js',
 						'client-src/js-app/utils/*.js',
 						'client-src/js-app/models/*.js',
+						'client-src/js-app/collections/*.js',
 						'client-src/js-app/views/**/*.js',
+						'client-src/js-app/base/router.js',
 						'client-src/js-app/base/app.js'
 						],
 					dest: 'web-service/public/js/app.js'}
@@ -84,8 +86,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['jshint', 'less', 'concat:app', 'uglify:app', 'watch']);
 	grunt.registerTask('w', ['watch']);
 	grunt.registerTask('l', ['less']);
-	//grunt.registerTask('js', ['jshint', 'concat:app', 'uglify:app']);
-
+	grunt.registerTask('js', ['jshint', 'concat:app', 'uglify:app']);
 	grunt.registerTask('lib', ['concat:lib', 'uglify:lib']);
 
 };
