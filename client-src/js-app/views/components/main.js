@@ -27,7 +27,7 @@ FAB.Controller = Backbone.View.extend({
 		this.$el.html(this.swipe.render().el);
 		
 
-		this.swipe.bootstrap();
+		// this.swipe.bootstrap();
 	
 	},
 

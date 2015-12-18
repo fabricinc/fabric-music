@@ -25,7 +25,7 @@ FAB.View.Page.Swipe = Backbone.View.extend({
 		}, this);
 
 
-		// FAB.Vent.on('swipe', this.bootstrap, this);
+		FAB.Vent.on('swipe', this.bootstrap, this);
 
 		// this.render();
 
@@ -77,7 +77,7 @@ FAB.View.Page.Swipe = Backbone.View.extend({
 
 	renderTrack: function(track){
 
-		var poster = new Poster({ model: track, vent: this.vent });
+		var poster = new FAB.View.Element.Poster({ model: track, vent: this.vent });
 
 		this.$el.prepend( poster.render().el );
 
