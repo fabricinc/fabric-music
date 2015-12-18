@@ -7,8 +7,8 @@ FAB.Router = Backbone.Router.extend({
 	},
 
 	swipe: function(){
-	
-		console.log( 'swipe' );
+
+		FAB.Vent.trigger('swipe');
 
 	},
 

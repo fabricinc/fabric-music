@@ -15,6 +15,7 @@ window.FAB = {
 	Util: {},
 	Controller: {},
 	Router: {},
+	Vent: {},
 	View: {
 		Block: {},
 		Element: {},

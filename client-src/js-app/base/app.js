@@ -33,11 +33,28 @@ FAB.init = function() {
 	// FAB.Helper.Experiment.init();
 
 
+	/* CREATE EVENTS OBJECT
+	================================================== */
+	this.Vent = _.extend({}, Backbone.Events);
+
+
+	/* CREATE CONTROLLER VIEW
+	================================================== */	
+	new this.Controller();
+
+
 	/* START ROUTER
 	================================================== */
 	// Initialize Backbone Router
-	
-	new FAB.Router();
+
+	new this.Router();
 	Backbone.history.start();
+
+	
+
+
+	console.log( this );
+
+
 
 };
